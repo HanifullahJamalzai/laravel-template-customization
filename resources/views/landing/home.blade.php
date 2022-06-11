@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Home')
 
 @section('contents')
 
@@ -13,7 +14,7 @@
   
           <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
   
-            <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
+            <div class="col-xl-5 img-bg" style="background-image: url({{asset('landing_assets/img/why-us-bg.jpg')}})"></div>
             <div class="col-xl-7 slides  position-relative">
   
               <div class="slides-1 swiper">
@@ -246,7 +247,7 @@
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="post-box">
-                <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+                <div class="post-img"><img src="{{asset('landing_assets/img/blog/blog-1.jpg')}} " class="img-fluid" alt=""></div>
                 <div class="meta">
                   <span class="post-date">Tue, December 12</span>
                   <span class="post-author"> / Julia Parker</span>
@@ -259,7 +260,7 @@
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="post-box">
-                <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+                <div class="post-img"><img src="{{asset('landing_assets/img/blog/blog-2.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="meta">
                   <span class="post-date">Fri, September 05</span>
                   <span class="post-author"> / Mario Douglas</span>
@@ -272,7 +273,7 @@
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div class="post-box">
-                <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+                <div class="post-img"><img src="{{asset('landing_assets/img/blog/blog-3.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="meta">
                   <span class="post-date">Tue, July 27</span>
                   <span class="post-author"> / Lisa Hunter</span>
@@ -285,7 +286,7 @@
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div class="post-box">
-                <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt=""></div>
+                <div class="post-img"><img src="{{asset('landing_assets/img/blog/blog-4.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="meta">
                   <span class="post-date">Tue, Sep 16</span>
                   <span class="post-author"> / Mario Douglas</span>
