@@ -44,7 +44,7 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  @include('landing.layouts.partials.hero')
+  {{-- @include('landing.layouts.partials.hero') --}}
   <!-- End Hero Section -->
 
   <main id="main">

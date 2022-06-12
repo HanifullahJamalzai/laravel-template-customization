@@ -1,6 +1,7 @@
  
  @extends('landing.layouts.app')
  @section('title', 'about')
+
  @section('contents')
 
 

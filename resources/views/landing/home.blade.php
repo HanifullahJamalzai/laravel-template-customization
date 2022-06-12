@@ -1,6 +1,7 @@
 @extends('landing.layouts.app')
 @section('title', 'Home')
 
+@include('landing.layouts.partials.hero')
 @section('contents')
 
     <!-- ======= Why Choose Us Section ======= -->

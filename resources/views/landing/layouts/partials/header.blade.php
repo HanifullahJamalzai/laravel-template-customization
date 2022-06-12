@@ -12,7 +12,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/" class="active">Home</a></li>
+          <li><a href="{{route('home')}}" class="active">Home</a></li>
           <li><a href="{{route('about')}}">About</a></li>
           <li><a href="{{route('service')}}">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
