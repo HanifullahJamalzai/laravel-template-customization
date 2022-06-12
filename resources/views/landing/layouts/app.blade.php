@@ -40,11 +40,11 @@
 <body class="page-index">
 
   <!-- ======= Header ======= -->
-  @include('layouts.partials.header')
+  @include('landing.layouts.partials.header')
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  @include('layouts.partials.hero')
+  @include('landing.layouts.partials.hero')
   <!-- End Hero Section -->
 
   <main id="main">
@@ -54,7 +54,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  @include('layouts.partials.footer')
+  @include('landing.layouts.partials.footer')
   <!-- End Footer -->
   <!-- End Footer -->
 

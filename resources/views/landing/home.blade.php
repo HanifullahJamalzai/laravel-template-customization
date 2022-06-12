@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('landing.layouts.app')
 @section('title', 'Home')
 
 @section('contents')
@@ -303,4 +303,5 @@
       </section><!-- End Recent Blog Posts Section -->
   
 
+      
 @endsection

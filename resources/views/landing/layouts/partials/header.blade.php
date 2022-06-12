@@ -13,8 +13,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/service">Services</a></li>
+          <li><a href="{{route('about')}}">About</a></li>
+          <li><a href="{{route('service')}}">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>

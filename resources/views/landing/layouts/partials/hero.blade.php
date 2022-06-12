@@ -2,7 +2,11 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4">
-          <h2 data-aos="fade-up">Focus On What Matters</h2>
+          <h2 data-aos="fade-up">{{ $title }}</h2>
+          
+          {{-- to prevent HTML Special Characters --}}
+          
+          {{-- <h2 data-aos="fade-up">{!! $title !!}</h2> --}}
           <blockquote data-aos="fade-up" data-aos-delay="100">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
           </blockquote>
