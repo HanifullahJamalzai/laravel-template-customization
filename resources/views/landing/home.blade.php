@@ -75,8 +75,22 @@
           </div>
   
           <div class="row gy-5">
-  
+            
+            @foreach ($services as $s)
+                
             <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-briefcase" style="color: #f57813;"></i>
+              </div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">{{$s->title}}</a></h4>
+                <p class="description">{{$s->description}}</p>
+              </div>
+            </div>
+
+            @endforeach
+
+            {{-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
@@ -100,7 +114,7 @@
                 <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
               </div>
             </div><!-- End Service Item -->
-  
+   --}}
             <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
               <div>
