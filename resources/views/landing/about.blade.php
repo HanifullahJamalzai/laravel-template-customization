@@ -131,11 +131,18 @@
       </div>
 
       <div class="row gy-4">
+        
+        {{-- Checkin our passed variable --}}
 
+        {{-- @php
+            dd($teams)
+        @endphp --}}
+        @forelse ($teams as $t)
+            
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
             <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="{{asset('landing_assets/img/team/team-1.jpg')}}" class="img-fluid" alt="">
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -144,12 +151,20 @@
               </div>
             </div>
             <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4>{{$t->name}}</h4>
+              <span>{{$t->position}}</span>
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div>
 
+
+        @empty
+            <h1>No Team Member available</h1>
+        @endforelse
+        
+        
+        <!-- End Team Member -->
+{{-- 
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="team-member">
             <div class="member-img">
@@ -202,7 +217,7 @@
               <span>Accountant</span>
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div><!-- End Team Member --> --}}
 
       </div>
 
