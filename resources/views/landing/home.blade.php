@@ -15,7 +15,7 @@
   
           <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
   
-            <div class="col-xl-5 img-bg" style="background-image: url({{asset('landing_assets/img/why-us-bg.jpg')}})"></div>
+            <div class="col-xl-5 img-bg" style="background-image: url( {{ asset('landing_assets/img/why-us-bg.jpg') }} )"></div>
             <div class="col-xl-7 slides  position-relative">
   
               <div class="slides-1 swiper">
@@ -145,13 +145,14 @@
         </div>
       </section><!-- End Our Services Section -->
   
+    
       <!-- ======= Call To Action Section ======= -->
       <section id="call-to-action" class="call-to-action">
         <div class="container" data-aos="fade-up">
           <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
-              <h3>Ut fugiat aliquam aut non</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+              <h3>{{ $cta->title }}</h3>
+              <p>{{ $cta->description }}</p>
               <a class="cta-btn" href="#">Call To Action</a>
             </div>
           </div>

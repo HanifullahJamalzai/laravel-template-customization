@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\Team;
 use App\Models\Setting;
+use App\Models\Cta;
 
 class LandingPageController extends Controller
 {
@@ -13,10 +14,12 @@ class LandingPageController extends Controller
     public function index(){
         $setting = Setting::first();
         $services = Service::all();
+        $cta = Cta::first();
 
         $title = 'Focus On What Matters';
         return view('landing.home')
                     ->with('title', $title)
+                    ->with('cta', $cta)
                     ->with('services', $services)
                     ->with('setting', $setting);
         
